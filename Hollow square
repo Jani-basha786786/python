@@ -1,0 +1,14 @@
+def print_hollow_square(size):
+    for i in range(size):
+        for j in range(size):
+            # Print '*' for the borders of the square
+            if i == 0 or i == size - 1 or j == 0 or j == size - 1:
+                print('*', end=' ')
+            else:
+                print(' ', end=' ')
+        print()  # Move to the next line after each row
+
+# Define the size of the hollow square
+square_size = 5
+
+# Print the hollow square
